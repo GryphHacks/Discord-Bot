@@ -9,4 +9,3 @@ env.bak/
 venv.bak/
 __pycache__/
 commands.txt
-poetry.lock
