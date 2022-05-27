@@ -15,7 +15,7 @@ from discord_components import (
 )
 port = 465
 smtp_server_domain_name = "smtp.gmail.com"
-sender_mail = "gryphhacks-development@socis.ca"
+sender_mail = os.getenv("EMAIL")
 password = os.getenv("EMAIL_PASSWORD")
 ssl_context = ssl.create_default_context()
 service = smtplib.SMTP_SSL(smtp_server_domain_name, port, context=ssl_context)
