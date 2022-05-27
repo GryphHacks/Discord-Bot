@@ -3,7 +3,7 @@ from discord.ext import commands
 from dotenv import load_dotenv
 import os
 from discord_components import DiscordComponents
-from keep_alive import keep_alive
+# from keep_alive import keep_alive
 
 
 load_dotenv()
@@ -61,9 +61,8 @@ for filename in os.listdir('./cogs'):
     if filename.endswith('.py'):
         client.load_extension(f'cogs.{filename[:-3]}')
 
-keep_alive()
-try:
-	client.run(os.getenv('GryphHacks'))
-except:
-	os.system('kill 1')
+# keep_alive()
+
+client.run(os.getenv("TOKEN2"))
+
 	
