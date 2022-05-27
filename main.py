@@ -63,6 +63,6 @@ for filename in os.listdir('./cogs'):
 
 # keep_alive()
 
-client.run(os.getenv("TOKEN2"))
+client.run(os.getenv("GryphHacks"))
 
 	
